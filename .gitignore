@@ -1,0 +1,269 @@
+
+Search
+Write
+Sign up
+
+Sign In
+
+
+
+Git Ignore File for Xcode
+Sour LeangChhean
+Sour LeangChhean
+
+·
+Follow
+
+2 min read
+·
+Jan 12
+1
+
+
+
+
+
+
+Photo by Taras Shypka on Unsplash
+An Xcode project can generate a lot of files that are specific to the development environment, and are not necessary to include in version control. A .gitignore file is a simple text file that specifies files and directories that Git should ignore when tracking changes to the repository. You can create a .gitignore file in the root of your Xcode project, and add the following lines to ignore common Xcode-generated files and directories:
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcuserstate
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Code Signing
+#
+# If you wish to share your code signing files, it is recommended to add them to gitignore
+#
+# *.cert
+# *.mobileprovision
+This will ignore the build-related files, user-specific settings and files, debug files and also the fastlane and code signing files. It’s important to note that, depending on the structure and setup of your project, this list may not cover all files that you may want to ignore. You may need to tweak the .gitignore file to include other files or directories specific to your project.
+
+Xcode
+IOS
+Git
+Gitignore
+1
+
+
+
+
+Sour LeangChhean
+Written by Sour LeangChhean
+217 Followers
+Software Engineer
+
+Follow
+
+More from Sour LeangChhean
+How to push project source code to Gitlab ?
+Sour LeangChhean
+Sour LeangChhean
+
+How to push project source code to Gitlab ?
+To push a project to GitLab, you will first need to create a repository for the project on GitLab. Once you have created the repository…
+2 min read
+·
+Jan 11
+How to do wireless debug on Xcode 9 and iOS 11
+Sour LeangChhean
+Sour LeangChhean
+
+in
+
+SOUR LEANGCHHEAN
+
+How to do wireless debug on Xcode 9 and iOS 11
+Set up a device for network debugging
+2 min read
+·
+Jun 8, 2017
+252
+
+1
+
+Simple Way to fix git conflict code in Xcode project
+Sour LeangChhean
+Sour LeangChhean
+
+Simple Way to fix git conflict code in Xcode project
+When working with Git in Xcode, conflicts can occur when multiple people are working on the same codebase and make changes to the same…
+2 min read
+·
+Jan 12
+2
+
+ARKit 6 Update Features
+Sour LeangChhean
+Sour LeangChhean
+
+ARKit 6 Update Features
+ARKit6, the latest version of Apple’s augmented reality platform, brings a number of new features and improvements to developers. Here is a…
+
+·
+3 min read
+·
+Oct 9
+See all from Sour LeangChhean
+Recommended from Medium
+How to properly install Cocoapods(You don’t have write permissions for the /Library/Ruby/Gems/2.6.0
+Emeka Jideije
+Emeka Jideije
+
+How to properly install Cocoapods(You don’t have write permissions for the /Library/Ruby/Gems/2.6.0
+We are going to see how to properly install cocoapods, probably when coding for ios/swift or crossplatform/flutter.
+2 min read
+·
+Jun 3
+3
+
+1
+
+Xcodegen — First Steps🚶‍♀️
+David Martinez
+David Martinez
+
+Xcodegen — First Steps🚶‍♀️
+Due you want to know what xcodegen could offer to you and learn some first steps to start using it? Let’s start!
+5 min read
+·
+Jul 23
+3
+
+Lists
+
+Breaking News: Tim Cook unveils Vision Pro headset in Apple’s most significant launch since iPhone
+
+Apple's Vision Pro
+7 stories
+·
+26 saves
+
+
+
+Tech & Tools
+15 stories
+·
+72 saves
+A series of icons from the John Lewis icon library
+An aerial view of a desktop, with digital devices, a command key, and paperclips
+A scattering of pixels on a grid
+Icon Design
+30 stories
+·
+134 saves
+
+
+
+Productivity
+230 stories
+·
+165 saves
+Multiple Environments in iOS Development with .(xcconfig) file
+Ömer Fırat
+Ömer Fırat
+
+Multiple Environments in iOS Development with .(xcconfig) file
+A leading practice in iOS development involves managing multiple environments throughout various phases of a project. Frequently, we need…
+4 min read
+·
+Aug 1
+Exploring Vim Updates in Xcode 15
+Kieran Cao
+Kieran Cao
+
+Exploring Vim Updates in Xcode 15
+It's that time of the year again! WWDC 2023 has arrived, and the release of Xcode 15 Beta is finally here. This update brings a range of…
+2 min read
+·
+Jun 6
+26
+
+Git ignore file
+Ario Liyan
+Ario Liyan
+
+Git ignore file
+This article is one of the articles in my Git the version controller series. In this article, we learn about .gitignore file.
+3 min read
+·
+Sep 17
+SwiftGen — How to neatly get rid of magic strings in iOS projects
+Mobile@Exxeta
+Mobile@Exxeta
+
+SwiftGen — How to neatly get rid of magic strings in iOS projects
+It’s worth a try
+8 min read
+·
+May 8
+89
+
+See more recommendations
+Help
+
+Status
+
+About
+
+Careers
+
+Blog
+
+Privacy
+
+Terms
+
+Text to speech
+
+Teams

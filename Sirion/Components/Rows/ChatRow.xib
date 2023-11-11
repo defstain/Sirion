@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatRow" rowHeight="87" id="KGk-i7-Jjw" customClass="ChatRow" customModule="Sirion" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i47-op-hkH">
+                        <rect key="frame" x="15" y="16" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="i47-op-hkH" secondAttribute="height" multiplier="1:1" id="EoA-no-out"/>
+                            <constraint firstAttribute="height" constant="55" id="fDa-Ld-JUm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="27.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDy-jM-2S9" userLabel="DEVISS">
+                        <rect key="frame" x="80" y="16" width="258.33333333333331" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PJP-hK-H0a"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-JK-22B">
+                        <rect key="frame" x="358.33333333333331" y="16" width="16.666666666666686" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2si-da-Z5c">
+                        <rect key="frame" x="80" y="39" width="295" height="31.333333333333329"/>
+                        <string key="text">Power to change manything. Say hello to a Mac that is extreme in every way. With the greatest performance, expansion, and configurability yet, it is a system created to let a wide range of professionals push the limits of what is possible.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2si-da-Z5c" firstAttribute="top" secondItem="VDy-jM-2S9" secondAttribute="bottom" constant="3" id="JVf-Y9-wKC"/>
+                    <constraint firstItem="2si-da-Z5c" firstAttribute="leading" secondItem="i47-op-hkH" secondAttribute="trailing" constant="10" id="KdO-C8-6s9"/>
+                    <constraint firstAttribute="trailing" secondItem="2si-da-Z5c" secondAttribute="trailing" constant="15" id="LrZ-xB-sPf"/>
+                    <constraint firstItem="i47-op-hkH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WpK-dW-geP"/>
+                    <constraint firstItem="z0H-JK-22B" firstAttribute="leading" secondItem="VDy-jM-2S9" secondAttribute="trailing" constant="20" id="ffO-H0-Xnb"/>
+                    <constraint firstItem="VDy-jM-2S9" firstAttribute="top" secondItem="i47-op-hkH" secondAttribute="top" id="iXo-QE-jK5"/>
+                    <constraint firstAttribute="trailing" secondItem="z0H-JK-22B" secondAttribute="trailing" constant="15" id="jTs-13-DgI"/>
+                    <constraint firstItem="VDy-jM-2S9" firstAttribute="leading" secondItem="i47-op-hkH" secondAttribute="trailing" constant="10" id="jmq-Rj-hct"/>
+                    <constraint firstItem="i47-op-hkH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="os8-bg-43v"/>
+                    <constraint firstItem="z0H-JK-22B" firstAttribute="top" secondItem="VDy-jM-2S9" secondAttribute="top" id="xQn-qk-utF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="displayName" destination="VDy-jM-2S9" id="lei-eR-39d"/>
+                <outlet property="lastMesageDate" destination="z0H-JK-22B" id="Gej-XK-dTA"/>
+                <outlet property="lastMessage" destination="2si-da-Z5c" id="Tol-OA-Lwj"/>
+                <outlet property="profilePhoto" destination="i47-op-hkH" id="vQ8-XZ-td3"/>
+            </connections>
+            <point key="canvasLocation" x="192.36641221374046" y="34.859154929577464"/>
+        </tableViewCell>
+    </objects>
+</document>
