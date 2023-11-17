@@ -1,6 +1,6 @@
 //
 //  Functions.swift
-//  InstaDC
+//  Sirion
 //
 //  Created by IC Deis on 6/24/23.
 //
@@ -72,13 +72,14 @@ var mainUserID: String? {
 /// Fetches current user data and sets them to UserDefaults
 func SetMainUserData() async throws {
    guard let user = Auth.auth().currentUser else { return }
-   let mainUser = try await UserManager.shared.getUser(withUId: user.uid)
+   var mainUser = try await UserManager.shared.getUser(withUId: user.uid)
    
    UserDefaults.standard.set(mainUser.uid, forKey: UDKeys.uid)
    UserDefaults.standard.set(mainUser.displayName, forKey: UDKeys.displayName)
    saveToUserDefaults(data: mainUser, key: UDKeys.dbuser)
+   
    if let imageUrl = user.photoURL {
-      UserDefaults.standard.setValue(imageUrl, forKey: UDKeys.photoUrl)
+      UserDefaults.standard.setValue(imageUrl.absoluteString, forKey: UDKeys.photoUrl)
    }
 }
 

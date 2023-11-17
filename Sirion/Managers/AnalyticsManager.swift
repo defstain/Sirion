@@ -1,6 +1,6 @@
 //
 //  AnalyticsManager.swift
-//  InstaDC
+//  Sirion
 //
 //  Created by IC Deis on 7/1/23.
 //

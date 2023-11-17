@@ -13,8 +13,6 @@ class TabbarController: UITabBarController {
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let profile = ProfileNavigation.instantiate()
-      addChild(profile)
       setMainUserPhoto()
    }
 

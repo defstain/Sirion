@@ -43,7 +43,7 @@ class ChangeProfileInfoVC: UIViewController {
    }
    
    @objc private func saveChanges() {
-      guard let newText = textInput.text else { return }
+      guard let newText = textInput.text?.trimmingCharacters(in: .whitespaces) else { return }
       guard let option else { return }
       guard let mainUID = mainUserID else { return }
       self.view.isUserInteractionEnabled = false

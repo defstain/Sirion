@@ -48,7 +48,6 @@ class SignUpVC: UIViewController {
      signUp()
    }
    
-   
 
 }
 
@@ -75,11 +74,11 @@ extension SignUpVC: UIImagePickerControllerDelegate, UINavigationControllerDeleg
                                                             email: user.email ?? "no email", provider: "google")
             
             if success {
+               try await userManager.updateProfilePhotoUrl(uid: user.uid, path: image.path, url: image.url)
                try await SetMainUserData()
                delegate?.signUpCompleted(delegateName: "SignUpDelegate")
                self.navigationController?.popViewController(animated: true)
             }
-            try await userManager.updateProfilePhotoUrl(uid: user.uid, path: image.path, url: image.url)
          } catch {
             printConsole(type: .error, "Making new user has failed!")
             printConsole(type: .error, "Sign Up " + error.localizedDescription)

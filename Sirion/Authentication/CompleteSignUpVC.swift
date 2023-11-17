@@ -69,11 +69,11 @@ extension CompleteSignUpVC: UIImagePickerControllerDelegate, UINavigationControl
             let success = try await userManager.makeNewUser(uid: user.uid, username: username, fullname: displayName,
                                                             email: user.email ?? "no email", provider: "google")
             if success {
+               try await userManager.updateProfilePhotoUrl(uid: user.uid, path: result.path, url: result.url)
                try await SetMainUserData()
-               delegate?.signUpCompleted(delegateName: "CompleteSignUpDelegate")
+               delegate?.signUpCompleted(delegateName: CompleteSignUpVC.delegateName)
                self.dismiss(animated: true)
             }
-            try await userManager.updateProfilePhotoUrl(uid: user.uid, path: result.path, url: result.url)
          } catch {
             printConsole(type: .custom, "Making new user has failed")
             printConsole(type: .error, error.localizedDescription)
