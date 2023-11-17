@@ -1,6 +1,6 @@
 //
 //  DBFields.swift
-//  InstaDC
+//  Sirion
 //
 //  Created by IC Deis on 6/22/23.
 //
@@ -53,8 +53,8 @@ struct UDKeys {
    static let username = "user_username"
    static let displayName = "user_displayName"
    static let bio = "user_bio"
-   static let photo = "user_profilePhoto"
-   static let photoUrl = "user_profilePhoto_url"
+   static let photo = "user_profile_photo"
+   static let photoUrl = "user_profile_photo_url"
    static let dbuser = "dbuser"
    static let followings = "user_followings"
    

@@ -1,6 +1,6 @@
 //
 //  ChatView.swift
-//  InstaDC
+//  Sirion
 //
 //  Created by IC Deis on 7/24/23.
 //
